@@ -1,5 +1,7 @@
 # SPL Workspace
 
+I have decided to create my SPL study module(Sermaye piyasaları lisansı, CFA in America) thanks to absurd prices of other education sources. It is completely vibecoded project because i do not want to spend my time on this and i have claude. If you find a any bug or any upgrade offer inform me.
+
 ## Düzeyler
 
 | Düzey | Durum | Klasör |
