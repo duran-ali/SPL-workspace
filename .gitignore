@@ -1,0 +1,11 @@
+# SPL'ye ait telifli kaynaklar: yalnızca yerelde tutulur
+duzey-*/kaynaklar/**/*.pdf
+duzey-*/kaynaklar/metin/
+
+# Yerel araç ayarları
+.claude/
+
+# İşletim sistemi
+Thumbs.db
+desktop.ini
+.DS_Store
