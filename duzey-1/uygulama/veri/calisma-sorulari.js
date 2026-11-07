@@ -3,6 +3,7 @@
 window.SPL_CALISMA = {
   "1003": {
     pdf: "../kaynaklar/calisma-notlari/1003_Sermaye_Piyasasi_Araclari_1_Calisma_Sorulari.pdf",
+    pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1003_MKT_YENI_CALISMA-SORULARI_2.pdf", // internetten açılınca
     sorular: [
     { no: "1.1", gun: 1, sayfa: 4, baslik: "Tedavüldeki Paylar ve Geri Alınan Payların Hisse Başına Kazanca (HBK) Etkisi" },
     { no: "1.2", gun: 1, sayfa: 4, baslik: "Fiili Dolaşımdaki Payların (Free Float) Sınıflandırılması" },

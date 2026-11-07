@@ -1,26 +1,24 @@
-# Lisans / License
+# License
 
 Copyright (c) 2026 Duran Ali Atalay
 
-Bu proje **kişisel, eğitim ve diğer ticari olmayan amaçlarla** serbestçe kullanılabilir. **Ticari kullanım yasaktır** (ör. projenin veya içeriğinin satılması, ücretli kurs ya da ürünlerde kullanılması). Ticari kullanım için yazılı izin gerekir.
+This project may be used freely for **personal, educational and other noncommercial purposes**. **Commercial use is not permitted** (for example selling the project or its content, or using it in paid courses or products) without prior written permission.
 
-This project may be used freely for **personal, educational and other noncommercial purposes**. **Commercial use is not permitted** without prior written permission.
+## Which license covers what
 
-## Hangi lisans neyi kapsar / Which license covers what
-
-| Kapsam / Scope | Lisans / License |
+| Scope | License |
 |---|---|
-| Yazılım: `duzey-*/uygulama/` altındaki `index.html`, `js/`, `stil.css` | [PolyForm Noncommercial License 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
-| İçerik: ders anlatımları, sorular, açıklamalar (`duzey-*/uygulama/icerik/`, `duzey-*/uygulama/veri/`), Markdown ve JSON belgeler | [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)](LICENSES/CC-BY-NC-SA-4.0.txt) |
+| Software: `index.html` in the repository root, and `index.html`, `js/` and `stil.css` under `duzey-*/uygulama/` | [PolyForm Noncommercial License 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
+| Content: lessons, questions and explanations (`duzey-*/uygulama/icerik/`, `duzey-*/uygulama/veri/`), Markdown and JSON documents | [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSES/CC-BY-NC-SA-4.0.txt) |
 
 Required Notice: Copyright (c) 2026 Duran Ali Atalay (https://github.com/duran-ali/SPL-workspace)
 
-İçeriği paylaşırken veya uyarlarken kaynak göstermelisin (proje adı ve bağlantısı) ve uyarlamaları aynı lisansla paylaşmalısın.
+When you share or adapt the content, credit the project (name and link) and share your adaptations under the same license.
 
-## Üçüncü taraf kaynaklar / Third-party material
+## Third-party material
 
-SPL'nin (Sermaye Piyasası Lisanslama Sicil ve Eğitim Kuruluşu) çalışma notları, çalışma soruları ve sınav kılavuzu bu repoda **bulunmaz** ve yukarıdaki lisanslarla lisanslanmaz; tüm hakları SPL'ye aittir. Mevzuat metinleri ve resmi kurumların yayınları kendi koşullarına tabidir.
+SPL's (Sermaye Piyasası Lisanslama Sicil ve Eğitim Kuruluşu) study notes, practice questions and exam guide are **not** included in this repository and are not licensed under the licenses above; all rights belong to SPL. Legislation texts and publications of official bodies are subject to their own terms.
 
-## Sorumluluk reddi / Disclaimer
+## Disclaimer
 
-Bu proje SPL, SPK veya Borsa İstanbul ile bağlantılı değildir ve onlar tarafından onaylanmamıştır. İçerik resmi notlardan kendi ifadelerimle hazırlanmıştır ancak hata içerebilir veya güncelliğini yitirebilir; sınava hazırlanırken her zaman SPL'nin güncel resmi kaynaklarını esas al. Proje "olduğu gibi" sunulur, hiçbir garanti verilmez.
+This project is not affiliated with or endorsed by SPL, the Capital Markets Board of Turkey (SPK) or Borsa İstanbul. The content was written in my own words from the official notes but may contain errors or become outdated; always rely on SPL's current official sources when preparing for the exam. The project is provided "as is", without any warranty.

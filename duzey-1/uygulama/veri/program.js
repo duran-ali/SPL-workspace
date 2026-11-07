@@ -13,6 +13,7 @@ window.SPL_PROGRAM = {
       ad: "Dar Kapsamlı Sermaye Piyasası Mevzuatı ve Meslek Kuralları",
       kisa: "Mevzuat ve Meslek Kuralları",
       pdf: "../kaynaklar/calisma-notlari/1001_Dar_Kapsamli_SP_Mevzuati_ve_Meslek_Kurallari.pdf",
+      pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1001_MKT_300062026_202607140951.pdf", // internetten açılınca
       pdfOfset: 10, // PDF sayfası = basılı sayfa + 10
       gunler: [
         { no: 1,  bolum: "6362 sayılı Sermaye Piyasası Kanunu", baslik: "Sermaye piyasası, SPKn'nin amacı, kapsamı ve sermaye piyasası araçları", sayfa: [1, 10], hazir: true },
@@ -42,6 +43,7 @@ window.SPL_PROGRAM = {
       ad: "Sermaye Piyasası Araçları 1",
       kisa: "Sermaye Piyasası Araçları 1",
       pdf: "../kaynaklar/calisma-notlari/1003_Sermaye_Piyasasi_Araclari_1.pdf",
+      pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1003_MKT_YENI_15102026_202607221030.pdf", // internetten açılınca
       pdfOfset: 7, // PDF sayfası = basılı sayfa + 7
       gunler: [
         { no: 1,  bolum: "Bölüm I: Pay", baslik: "Anonim şirket, pay kavramı, pay türleri ve değer kavramları", sayfa: [1, 10], hazir: true },
@@ -73,6 +75,7 @@ window.SPL_PROGRAM = {
       ad: "Yatırım Kuruluşları",
       kisa: "Yatırım Kuruluşları",
       pdf: "../kaynaklar/calisma-notlari/1005_Yatirim_Kuruluslari.pdf",
+      pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1005_MKT_30062026_202607071520.pdf", // internetten açılınca
       pdfOfset: 11, // PDF sayfası = basılı sayfa + 11
       gunler: [
         { no: 1,  bolum: "III-37.1 Yatırım Hizmetleri Tebliği", baslik: "Yatırım hizmetleri, aracı kurum grupları ve alım satıma aracılık", sayfa: [1, 10], hazir: true },
@@ -98,6 +101,7 @@ window.SPL_PROGRAM = {
       ad: "Takas, Saklama ve Operasyon İşlemleri",
       kisa: "Takas, Saklama ve Operasyon",
       pdf: "../kaynaklar/calisma-notlari/1012_Takas_Saklama_ve_Operasyon_Islemleri.pdf",
+      pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1012_MKT_30062026_202607141057.pdf", // internetten açılınca
       pdfOfset: 11,
       gunler: [
         { no: 1,  bolum: "1. Temel Kavramlar", baslik: "Takas ve saklamaya ilişkin temel kavramlar", sayfa: [1, 6], hazir: true },

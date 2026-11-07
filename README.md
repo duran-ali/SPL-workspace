@@ -2,24 +2,31 @@
 
 I have decided to create my SPL study module (Sermaye piyasaları lisansı, CFA in America) thanks to absurd prices of other education sources. It is a completely vibe-coded project because I do not want to spend my time on this and I have Claude. If you find any bugs or have suggestions for improvements, let me know.
 
-## Düzeyler
+## Levels
 
-| Düzey | Durum | Klasör |
+| Level | Status | Folder |
 |---|---|---|
-| Düzey 1 | Hazır: 4 ders, günlük okumalar, mini testler, ders sonu testleri, genel deneme | [`duzey-1/`](duzey-1/) |
-| Düzey 2 | Planlanıyor | – |
-| Düzey 3 | Planlanıyor | – |
+| Level 1 (Düzey 1) | Ready: 4 courses, daily lessons, mini tests, end-of-course tests, mock exams | [`duzey-1/`](duzey-1/) |
+| Level 2 (Düzey 2) | Planned | – |
+| Level 3 (Düzey 3) | Planned | – |
 
-## Kullanım
+The study content and the app interface are in Turkish, the language of the exam.
 
-1. Repoyu indir (Code → Download ZIP) veya klonla.
-2. `duzey-1/uygulama/index.html` dosyasını tarayıcıda aç. İnternet gerekmez; ilerleme tarayıcıda saklanır.
-3. İsteğe bağlı: resmi not bağlantılarının çalışması için SPL'nin PDF'lerini [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md) dosyasındaki adlarla indir.
+## Usage
 
-Ayrıntılar: [`duzey-1/README.md`](duzey-1/README.md)
+**Online:** https://duran-ali.github.io/SPL-workspace/ — nothing to install. The official note links open the PDFs on SPL's own website.
 
-## Lisans
+**Offline:**
+1. Download the repository (Code → Download ZIP) or clone it.
+2. Open `duzey-1/uygulama/index.html` in a browser. No internet connection is needed.
+3. Optional: for the official note links to work offline, download SPL's PDFs under the file names listed in [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md).
 
-Kişisel ve eğitim amaçlı kullanım serbest, **ticari kullanım yasak**. Kod PolyForm Noncommercial 1.0.0, içerik CC BY-NC-SA 4.0 lisanslıdır. Ayrıntılar ve sorumluluk reddi: [LICENSE.md](LICENSE.md)
+Progress is stored only in the browser you use, so the online and offline versions (and different devices) keep separate records. Use the backup and restore buttons on the app's Settings page (Ayarlar) to move your progress.
 
-Bu proje SPL, SPK veya Borsa İstanbul ile bağlantılı değildir.
+Details: [`duzey-1/README.md`](duzey-1/README.md)
+
+## License
+
+Free for personal and educational use; **commercial use is not permitted**. Code is licensed under PolyForm Noncommercial 1.0.0 and content under CC BY-NC-SA 4.0. Details and disclaimer: [LICENSE.md](LICENSE.md)
+
+This project is not affiliated with SPL, SPK or Borsa İstanbul.

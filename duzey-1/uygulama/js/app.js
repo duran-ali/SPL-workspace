@@ -41,9 +41,13 @@
   function gunTamam(kod, no) { var g = gunKaydi(kod, no); return !!(g && g.tamam); }
   function kelimeSayisi(t) { return (t.match(/\S+/g) || []).length; }
   function okumaSuresi(t) { var dk = Math.round(kelimeSayisi(t) / 130); return Math.max(1, dk); }
+  // Yerelde (dosyadan veya localhost'tan) indirilen PDF kullanılır. İnternetteki bir
+  // adresten (ör. GitHub Pages) açılınca PDF'ler orada olmadığı için SPL'nin resmi adresi kullanılır.
+  var YEREL = location.protocol === "file:" || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  function pdfAdresi(o) { return (!YEREL && o.pdfResmi) ? o.pdfResmi : o.pdf; }
   function pdfLink(d, sayfa) {
     if (!d.pdf) return null;
-    return d.pdf + (d.pdfOfset != null ? "#page=" + (sayfa + d.pdfOfset) : "");
+    return pdfAdresi(d) + (d.pdfOfset != null ? "#page=" + (sayfa + d.pdfOfset) : "");
   }
   function ilerleme(d) {
     var top = d.gunler.length, biten = d.gunler.filter(function (g) { return gunTamam(d.kod, g.no); }).length;
@@ -153,7 +157,7 @@
     var d = ders(kod); if (!d) return anaSayfa();
     var i = ilerleme(d);
     var h = "<a class=\"geri\" href=\"#/\">← Ana sayfa</a><h1>" + kac(d.ad) + "</h1>";
-    h += "<p class=\"alt-yazi\">" + d.kod + " · 25 soru · resmi not: <a href=\"" + kac(d.pdf) + "\" target=\"_blank\">PDF'i aç</a></p>";
+    h += "<p class=\"alt-yazi\">" + d.kod + " · 25 soru · resmi not: <a href=\"" + kac(pdfAdresi(d)) + "\" target=\"_blank\">PDF'i aç</a></p>";
     if (!d.gunler.length) { goster(h + "<div class=\"kart\"><p>Bu dersin günlük planı henüz hazırlanmadı.</p></div>"); return; }
     h += cubuk(i.oran) + "<p class=\"kucuk\">" + i.biten + " / " + i.top + " gün tamamlandı</p>";
     h += "<ol class=\"gun-listesi\">";
@@ -221,7 +225,7 @@
     if (!liste.length) return "";
     var h = "<div class=\"kart\"><h3>Resmi çalışma soruları</h3><p class=\"kucuk soluk\">SPL'nin açık uçlu, hesaplamalı soruları. Önce kendin çöz, sonra PDF'teki cevapla karşılaştır.</p><ul>";
     liste.forEach(function (q) {
-      h += "<li><a target=\"_blank\" href=\"" + kac(cs.pdf + "#page=" + q.sayfa) + "\">Soru " + kac(q.no) + ": " + kac(q.baslik) + "</a> <span class=\"kucuk soluk\">(s. " + q.sayfa + ")</span>" +
+      h += "<li><a target=\"_blank\" href=\"" + kac(pdfAdresi(cs) + "#page=" + q.sayfa) + "\">Soru " + kac(q.no) + ": " + kac(q.baslik) + "</a> <span class=\"kucuk soluk\">(s. " + q.sayfa + ")</span>" +
         (q.not ? "<br><span class=\"kucuk uyari-yazi\">Not: " + kac(q.not) + "</span>" : "") + "</li>";
     });
     return h + "</ul></div>";

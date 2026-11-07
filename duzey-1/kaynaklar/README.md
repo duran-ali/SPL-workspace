@@ -1,10 +1,10 @@
-# Resmi kaynaklar (indirilmesi gerekir)
+# Official sources (download required)
 
-Bu klasördeki PDF'ler SPL'ye (Sermaye Piyasası Lisanslama Sicil ve Eğitim Kuruluşu) aittir ve telif hakkı nedeniyle repoda paylaşılmaz. Uygulamadaki "resmi not" ve "çalışma soruları" bağlantılarının çalışması için dosyaları aşağıdaki adresten indirip **tablodaki adla** bu klasöre kaydet.
+The PDFs in this folder belong to SPL (Sermaye Piyasası Lisanslama Sicil ve Eğitim Kuruluşu, the Turkish capital markets licensing and training body) and are not shared in this repository because of copyright. For the app's "resmi not" (official note) and "çalışma soruları" (practice questions) links to work offline, download the files from the addresses below and save them in this folder **under the path shown in the table**.
 
-Kaynak sayfa: https://spl.com.tr/sinav-calisma-notlari/ (sürüm: 30.06.2026 güncellemesi)
+Source page: https://spl.com.tr/sinav-calisma-notlari/ (version: update of 2026-06-30)
 
-| Kaydedilecek yol | İndirme adresi |
+| Save as | Download from |
 |---|---|
 | `calisma-notlari/1001_Dar_Kapsamli_SP_Mevzuati_ve_Meslek_Kurallari.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1001_MKT_300062026_202607140951.pdf |
 | `calisma-notlari/1003_Sermaye_Piyasasi_Araclari_1.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1003_MKT_YENI_15102026_202607221030.pdf |
@@ -13,6 +13,8 @@ Kaynak sayfa: https://spl.com.tr/sinav-calisma-notlari/ (sürüm: 30.06.2026 gü
 | `calisma-notlari/1012_Takas_Saklama_ve_Operasyon_Islemleri.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1012_MKT_30062026_202607141057.pdf |
 | `resmi-belgeler/e-LS_Kilavuzu_2026-11.pdf` | https://spl.com.tr/wp-content/uploads/2026/11/Elektronik-Lisanslama-Sinavlari-e-LS-Kilavuzu.pdf |
 
-SPL notları güncellediğinde adresler değişebilir; güncel dosyayı kaynak sayfadan bul. Sayfa numaraları farklı bir sürümde kayabilir.
+The addresses may change when SPL updates the notes; in that case find the current file on the source page. Page numbers may shift in a different version.
 
-`metin/` klasörü, PDF'lerin yerelde çıkarılmış düz metin hâlidir ve repoya konmaz.
+When the app is opened online (for example on GitHub Pages), the links point directly to these SPL addresses, so no download is needed.
+
+The `metin/` folder holds plain-text extracts of the PDFs made locally and is not part of the repository.
