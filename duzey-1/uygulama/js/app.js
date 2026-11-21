@@ -170,7 +170,7 @@
       var ic = "<span class=\"gun-no\">" + g.no + "</span><span class=\"gun-metin\"><strong>" + kac(g.baslik) + "</strong><small>s. " + g.sayfa[0] + "–" + g.sayfa[1] +
         (kayit && kayit.test ? " · test: " + kayit.test.dogru + "/" + kayit.test.toplam : "") + (!hazir ? " · içerik hazırlanacak" : "") + "</small></span>" +
         "<span class=\"gun-durum\">" + (durum === "tamam" ? "✓" : durum === "kilitli" ? "🔒" : "") + "</span>";
-      h += (acik ? "<a href=\"#/gun/" + kod + "/" + g.no + "\">" + ic + "</a>" : "<div>" + ic + "</div>") + "</li>";
+      h += (acik ? "<a href=\"#/gun/" + kod + "/" + g.no + "\">" + ic + "</a>" : "<div data-kilit>" + ic + "</div>") + "</li>";
     });
     h += "</ol>";
     var sa = sonuAcikMi(d), sonuVar = !!ICERIK.sonu[kod];
@@ -202,7 +202,7 @@
     h += "<a href=\"#/ders/" + d.kod + "\">Tüm günler</a>";
     if (!sonraki) h += "<span></span>";
     else if (gunAcikMi(d, sonraki.no)) h += "<a href=\"#/gun/" + d.kod + "/" + sonraki.no + "\">" + sonraki.no + ". gün →</a>";
-    else h += "<span class=\"soluk\" title=\"Bu günün mini testini bitirince açılır\">" + sonraki.no + ". gün 🔒</span>";
+    else h += "<span class=\"soluk\" data-kilit title=\"Bu günün mini testini bitirince açılır\">" + sonraki.no + ". gün 🔒</span>";
     return h + "</nav>";
   }
 
@@ -547,6 +547,26 @@
     }
   }
 
+  // ---------- Kısa uyarı (kendiliğinden kapanır) ----------
+  var uyariKutu = null, uyariSayac = null;
+  function uyariGoster(metin) {
+    if (!uyariKutu) {
+      uyariKutu = document.createElement("div");
+      uyariKutu.className = "kisa-uyari";
+      uyariKutu.setAttribute("role", "status");
+      uyariKutu.setAttribute("aria-live", "polite");
+      document.body.appendChild(uyariKutu);
+    }
+    uyariKutu.textContent = metin;
+    uyariKutu.classList.add("gorunur");
+    clearTimeout(uyariSayac);
+    uyariSayac = setTimeout(uyariKapat, 2000);
+  }
+  function uyariKapat() {
+    clearTimeout(uyariSayac);
+    if (uyariKutu) uyariKutu.classList.remove("gorunur");
+  }
+
   // ---------- İçerik dosyalarını yükle ----------
   function basla() {
     kok = document.getElementById("uygulama");
@@ -561,6 +581,9 @@
     function bitti() { if (--kalan <= 0) { window.addEventListener("hashchange", yonlendir); yonlendir(); } }
     // Bulunulan adrese giden bağlantı (ör. deneme sonucundaki "Deneme sayfası") hashchange üretmez; sayfayı yeniden çiz.
     document.addEventListener("click", function (e) {
+      // Kilitli güne tıklanınca kısa uyarı; başka bir yere tıklanınca uyarı kapanır.
+      if (e.target.closest && e.target.closest("[data-kilit]")) uyariGoster("Bu güne başlamak için önceki günleri tamamlamalısın.");
+      else uyariKapat();
       var a = e.target.closest && e.target.closest("a[href^='#']");
       if (a && a.getAttribute("href") === location.hash) { e.preventDefault(); yonlendir(); }
     });

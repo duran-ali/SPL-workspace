@@ -106,6 +106,16 @@ a.kart:hover { border-color: var(--vurgu); }
 .gun-no { flex: 0 0 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--vurgu-acik); color: var(--vurgu); font-weight: 700; font-size: 14px; }
 .gun.tamam .gun-no { background: var(--ok-zemin); color: var(--ok); }
 .gun.kilitli { opacity: .55; }
+[data-kilit] { cursor: not-allowed; }
+.kisa-uyari {
+  position: fixed; left: 50%; bottom: 24px; z-index: 50;
+  max-width: calc(100% - 32px); padding: 10px 16px; border-radius: 10px;
+  background: var(--metin); color: var(--zemin); font-size: 14px; text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,.2);
+  opacity: 0; transform: translate(-50%, 8px); pointer-events: none;
+  transition: opacity .2s, transform .2s;
+}
+.kisa-uyari.gorunur { opacity: 1; transform: translate(-50%, 0); }
 .gun-metin { flex: 1; display: flex; flex-direction: column; }
 .gun-metin small { color: var(--soluk); font-size: 13px; }
 .gun-durum { color: var(--ok); font-weight: 700; }
