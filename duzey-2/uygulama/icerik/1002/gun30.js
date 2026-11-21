@@ -155,7 +155,7 @@ GYF Tebliği'nin (III-52.3) ikinci günü: fonun **ne yapabileceği**, **ne yapa
     },
     {
       s: "Gayrimenkul yatırım fonlarına ilişkin aşağıdaki işlemlerden hangisini kurucu fon adına **yapabilir?**",
-      c: ["Fon portföyündeki bir otel binasını ticari maksatla bizzat işletmek", "Kendi personeliyle başka şirketlere proje geliştirme hizmeti vermek", "Kira geliri elde etmek amacıyla bir lojistik deposunu kiraya vermek", "Yurt dışında bir ofis binası satın alarak kiraya vermek", "Portföydeki pay senetlerini açığa satmak"],
+      c: ["Fon portföyündeki bir otel binasını ticari maksatla bizzat işletmek", "Kendi personeliyle başka şirketlere proje geliştirme hizmeti vermek", "Kira geliri amacıyla bir lojistik deposunu kiraya vermek", "Yurt dışında bir ofis binası satın alarak kiraya vermek", "Portföydeki pay senetlerini açığa satmak"],
       d: 2,
       a: "Fon, kira geliri veya alım satım kârı amacıyla gayrimenkulleri **kiraya verebilir**. Ancak gayrimenkulleri **ticari maksatla işletemez**, kendi personeliyle **proje hizmeti** veremez, **yurt dışında** gayrimenkul alım-satım-kiralama yapamaz ve **açığa satış** yapamaz.",
       k: "1002 resmi not s. 247–248"
@@ -176,7 +176,7 @@ GYF Tebliği'nin (III-52.3) ikinci günü: fonun **ne yapabileceği**, **ne yapa
     },
     {
       s: "**Proje gayrimenkul yatırım fonlarına** ilişkin aşağıdakilerden hangisi doğrudur?",
-      c: ["Toplam brüt alanının yarısından fazlası konut olan projelere yatırım için kurulur", "Fon toplam değerinin en az %80'i tamamlanmış binalardan oluşmalıdır", "Unvanda özel bir ibare kullanılması gerekmez", "İnşaat işlerini fonun kendi personeli yürütür", "Portföydeki nakit, pay senetlerinde serbestçe değerlendirilir"],
+      c: ["Brüt alanının yarısından fazlası konut olan projeler için kurulur", "Fon toplam değerinin en az %80'i tamamlanmış binalardan oluşmalıdır", "Unvanda herhangi bir özel ibare kullanılması gerekmez", "İnşaat işlerini fonun kendi bünyesindeki personeli yürütür", "Portföydeki nakit, pay senetlerinde serbestçe değerlendirilir"],
       d: 0,
       a: "Proje GYF'leri **bağımsız bölüm toplam brüt alanının yarısından fazlası konut** olan projelere yatırım için kurulur; unvanda \"**proje gayrimenkul yatırım fonu**\" ibaresi zorunludur; %80 şartı uygulanmaz; inşaatı **müteahhitler** yapar; nakit yalnızca sayılan güvenli araçlarda değerlendirilir.",
       k: "1002 resmi not s. 248–249"
@@ -190,7 +190,7 @@ GYF Tebliği'nin (III-52.3) ikinci günü: fonun **ne yapabileceği**, **ne yapa
     },
     {
       s: "GYF'ye değerleme hizmeti veren bir gayrimenkul değerleme kuruluşundan aynı varlık için en fazla kaç yıl üst üste hizmet alınabilir ve tekrar hizmet alınabilmesi için ne kadar süre geçmelidir?",
-      c: ["En fazla 2 yıl; 1 yıl ara", "En fazla 3 yıl; 2 yıl ara", "En fazla 5 yıl; 3 yıl ara", "En fazla 3 yıl; 3 yıl ara", "En fazla 4 yıl; 2 yıl ara"],
+      c: ["En fazla 2 yıl; 1 yıl ara", "En fazla 3 yıl; 2 yıl ara", "En fazla 5 yıl; 3 yıl ara", "En fazla 3 yıl; 3 yıllık ara", "En fazla 4 yıl; 2 yıl ara"],
       d: 1,
       a: "Aynı varlık için aynı değerleme kuruluşundan **üst üste en fazla üç yıl** hizmet alınabilir; tekrar hizmet alınabilmesi için **en az iki yıl** geçmesi zorunludur.",
       k: "1002 resmi not s. 253"

@@ -211,7 +211,7 @@ Yatırım Fonları Tebliği'nin (III-52.1) son günü:
     },
     {
       s: "Fonların birleşmesinde **değiştirme oranı** nasıl hesaplanır?",
-      c: ["Sona erecek fonun pay sayısı ÷ devralan fonun pay sayısı", "Devralan fonun birim pay değeri ÷ sona erecek fonun birim pay değeri", "Sona erecek fonun toplam değeri ÷ devralan fonun toplam değeri", "Devralan fonun pay sayısı ÷ sona erecek fonun birim pay değeri", "İki fonun son bir yıllık getirilerinin birbirine oranı"],
+      c: ["Sona erecek fonun pay sayısı ÷ devralan fonun pay sayısı", "Devralan fonun birim pay değeri ÷ sona erecek fonun birim pay değeri", "Sona erecek fonun fon toplam değeri ÷ devralan fonun fon toplam değeri", "Devralan fonun pay sayısı ÷ sona erecek fonun birim pay değeri", "İki fonun son bir yıllık getirilerinin birbirine oranı"],
       d: 1,
       a: "Kurucu, **bünyesinde birleşilecek fonun** birim pay değerini **sona erecek fonun** birim pay değerine bölerek değiştirme oranını bulur. Sona eren fonun pay sayısı bu orana **bölünür** ve sonuç devralan fonun pay sayısına eklenir; küsurat nakden ödenir.",
       k: "1002 resmi not s. 219"

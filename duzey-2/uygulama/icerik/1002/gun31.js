@@ -171,14 +171,14 @@ Girişim sermayesi yatırımlarının yanında:
     },
     {
       s: "Girişim sermayesi yatırım fonlarının **süresine** ilişkin hangisi doğrudur?",
-      c: ["Yalnızca süresiz olarak kurulabilir", "Süreli veya süresiz kurulabilir; tercih kurucuya aittir", "Yalnızca süreli olarak kurulur; süre içtüzük ve ihraç belgesinde yer alır", "Süresi Kurul tarafından her yıl yeniden belirlenir", "Süresi kanunla en fazla 10 yıl olarak sınırlandırılmıştır"],
+      c: ["Yalnızca süresiz olarak kurulabilir", "Süreli veya süresiz kurulabilir; tercih tamamen kurucuya aittir", "Yalnızca süreli kurulur; süre içtüzük ve ihraç belgesinde yer alır", "Süresi Kurul tarafından her yıl yeniden belirlenir", "Süresi kanunla en fazla 10 yıl olarak sınırlandırılmıştır"],
       d: 2,
       a: "GSYF'ler içtüzükle **süreli olarak** kurulur ve fonun süresine içtüzük ve ihraç belgesinde yer verilir. **GYF'ler** ise **süreli veya süresiz** kurulabilir.",
       k: "1002 resmi not s. 255"
     },
     {
       s: "Katılma payları fon süresi içinde iade edilebilen bir GSYF'de, yatırım kararını etkileyen ihraç belgesi değişikliği için 30 günlük bekleme süresinin uygulanmaması hangi şarta bağlıdır?",
-      c: ["Kurulun ayrıca onay vermesine", "Mevcut payların %51'ini temsil edenlerin sözlü onayına", "Mevcut payların %65'inden fazlasını temsil edenlerin yazılı onayına", "Kurucunun yönetim kurulunun oy birliğiyle karar almasına", "Portföy saklayıcısının değişikliği yazılı olarak uygun bulmasına"],
+      c: ["Kurulun ayrıca ve yazılı olarak onay vermesine", "Mevcut payların %51'ini temsil edenlerin sözlü onayına", "Payların %65'inden fazlasını temsil edenlerin yazılı onayına", "Kurucunun yönetim kurulunun oy birliğiyle karar almasına", "Portföy saklayıcısının değişikliği yazılı olarak uygun bulmasına"],
       d: 2,
       a: "Süre içinde iade edilebilen fonlarda mevcut payların **%65'inden fazlasını** temsil edenlerin, yalnızca süre sonunda iade edilebilen fonlarda ise **tüm** pay sahiplerinin **yazılı onayı** alınırsa 30 günlük bekleme ve erteleme hükümleri uygulanmaz.",
       k: "1002 resmi not s. 257"
@@ -192,28 +192,28 @@ Girişim sermayesi yatırımlarının yanında:
     },
     {
       s: "GSYF kurucusu nezdindeki yatırım komitesinde, YK üyesi ve genel müdürün yanında bulunması zorunlu olan personelin nitelikleri hangisidir?",
-      c: ["Gayrimenkul değerleme lisansı ve 3 yıllık tecrübe", "Dört yıllık yükseköğrenim ve girişim sermayesinde en az 5 yıllık tecrübe", "SPF İleri Düzey lisansı ve 2 yıllık tecrübe", "Bağımsız denetçi belgesi ve 10 yıllık meslek tecrübesi", "Yüksek lisans derecesi ve finans alanında 3 yıllık tecrübe"],
+      c: ["Gayrimenkul değerleme lisansı ve en az 3 yıllık tecrübe", "4 yıllık yükseköğrenim ve girişim sermayesinde en az 5 yıl", "SPF İleri Düzey lisansı ve 2 yıllık tecrübe", "Bağımsız denetçi belgesi ve 10 yıllık meslek tecrübesi", "Yüksek lisans derecesi ve finans alanında 3 yıllık tecrübe"],
       d: 1,
       a: "Komitede **dört yıllık yükseköğrenim** görmüş ve girişim sermayesi yatırımları konusunda **en az beş yıllık** tecrübeye sahip tam veya yarı zamanlı bir personel bulunur. (GYF'lerde bu üye **gayrimenkul değerleme uzmanıdır**.)",
       k: "1002 resmi not s. 259"
     },
     {
       s: "Girişim sermayesi yatırım fonlarında **fon sepeti fonlarına** ilişkin hangisi doğrudur?",
-      c: ["Toplam değerin en az %50'si yatırım fonu paylarından oluşur", "Unvanda \"Fon sepeti\" ibaresi kullanılması ihtiyaridir", "Toplam değerin en az %80'i ihraç belgesi onaylı GSYF'lerden oluşur", "Diğer fon sepeti fonlarına sınırsız yatırım yapabilir", "Portföydeki fonlara ödenen ücretler toplam gidere dâhil edilmez"],
+      c: ["Toplam değerin en az %50'si yatırım fonu paylarından oluşur", "Unvanda \"Fon sepeti\" ibaresi kullanılması ihtiyaridir", "Toplam değerin en az %80'i onaylı GSYF'lerden oluşur", "Diğer fon sepeti fonlarına sınırsız yatırım yapabilir", "Portföydeki fonlara ödenen ücretler toplam gider oranına dâhil edilmez"],
       d: 2,
       a: "GSYF fon sepeti fonlarında toplam değerin **en az %80'i** ihraç belgesi Kurulca onaylanmış **GSYF'lerden** oluşur; unvanda \"**Fon sepeti**\" ibaresi zorunludur; diğer fon sepeti fonlarına yatırım yapılamaz; ödenen ücretler toplam gider oranına dâhildir.",
       k: "1002 resmi not s. 260"
     },
     {
       s: "GSYF katılma paylarının **iştirak payları karşılığında** satılmasına ilişkin hangisi doğrudur?",
-      c: ["İştirak payı karşılığı satış hiçbir durumda mümkün değildir", "Satıştan önce iştirak paylarının Kurulca uygun görülen kuruluşlarca değerlemesi zorunludur", "Değer raporu masrafları her zaman fon portföyünden karşılanır", "Satışta rapordaki değerden yüksek bir değer esas alınabilir", "İştirak payları yalnızca halka açık şirketlerin payları olabilir"],
+      c: ["İştirak payı karşılığında satış hiçbir durumda yapılamaz", "Satış öncesi iştirak payları uygun bir kuruluşça değerlenir", "Değer raporunun masrafları her durumda fondan karşılanır", "Satışta rapordaki değerden yüksek bir değer esas alınabilir", "İştirak payları yalnızca borsadaki şirketlerin payları olabilir"],
       d: 1,
       a: "İhraç belgesinde yer verilmesi şartıyla paylar girişim şirketlerinin sermayesini temsil eden **iştirak payları** karşılığında satılabilir; satıştan önce **Kurulca uygun görülen kuruluşlarca değerleme** zorunludur. Rapor masrafı **fondan karşılanamaz** ve satışta rapor değerinden **fazla** değer esas alınamaz.",
       k: "1002 resmi not s. 261–262"
     },
     {
       s: "GSYF'de kurucunun katılma paylarının **geri alımını erteleyebilmesine** ilişkin hangisi doğrudur?",
-      c: ["Erteleme süresi en fazla 30 gündür", "İçtüzükte hüküm varsa en fazla 1 yıl ertelenebilir ve karar derhal Kurula bildirilir", "Erteleme için tüm pay sahiplerinin yazılı onayı gerekir", "Kurucu geri alımı süresiz olarak erteleyebilir", "Erteleme yalnızca Kurul kararıyla yapılabilir"],
+      c: ["Erteleme süresi en fazla 30 gün olarak uygulanabilir", "İçtüzükte hüküm varsa en çok 1 yıl ertelenir, Kurula bildirilir", "Erteleme için tüm pay sahiplerinin ayrı ayrı yazılı onayı aranır", "Kurucu geri alımı süre sınırı olmaksızın erteleyebilir", "Erteleme yalnızca Kurulun alacağı kararla yapılabilir"],
       d: 1,
       a: "İçtüzükte hüküm bulunmak şartıyla, likidite yetersiz ve çıkış yatırımcının zararına ise kurucu geri alımı erteleyebilir; erteleme **bir yılı aşamaz** ve karar **derhal Kurula** bildirilir.",
       k: "1002 resmi not s. 262"

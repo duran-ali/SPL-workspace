@@ -228,7 +228,7 @@ yoluyla oluşturulur. **Avans veya ilk halka arz tutarı en az 70.000.000 TL**'d
     },
     {
       s: "Bir BYF'nin son üç aylık ortalama fon toplam değeri asgari tutarın altına düşerse ne olur?",
-      c: ["Fon derhal tasfiye edilir", "Kurul bir defaya mahsus 1 aylık ek süre verebilir; sağlanamazsa tasfiye veya dönüşüm istenir", "Kurucu, eksik kısmı 10 iş günü içinde avans olarak tamamlamak zorundadır", "Fon payları otomatik olarak BİAŞ kotundan çıkarılır", "Kurul her seferinde 6 aylık ek süre tanır"],
+      c: ["Fon derhal ve başka bir işleme gerek kalmadan tasfiye edilir", "Kurul bir kez 1 ay ek süre verebilir; sonra tasfiye veya dönüşüm", "Kurucu eksik kısmı 10 iş günü içinde avans olarak tamamlamak zorundadır", "Fon payları otomatik olarak BİAŞ kotundan çıkarılır", "Kurul her seferinde 6 aylık ek süre tanır"],
       d: 1,
       a: "Son üç aylık ortalama değer **35 milyon TL**'nin altına düşerse Kurul **bir defaya mahsus bir aylık** ek süre verebilir. Süre sonunda da sağlanamazsa fonun **tasfiyesi** veya III-52.1 kapsamında başka bir fon türüne **dönüşümü** talep edilir.",
       k: "1002 resmi not s. 230"
@@ -242,7 +242,7 @@ yoluyla oluşturulur. **Avans veya ilk halka arz tutarı en az 70.000.000 TL**'d
     },
     {
       s: "Bir BYF'nin borsadaki işlem fiyatı, birim pay değerinin **önemli ölçüde üzerinde** ise arbitrajcı nasıl kâr elde eder?",
-      c: ["Borsadan BYF payı alıp fona iade eder, karşılığındaki kıymetleri satar", "Menkul kıymetleri teslim ederek yeni pay oluşturur ve bu payları borsada satar", "Kurucudan pay değerini düzeltmesini talep eder ve farkı tazminat olarak alır", "Fonun payları üzerinde açığa satış yaparak takasta fona iade eder", "Hiçbir işlem yapamaz; fark ancak endeks değiştiğinde kapanır"],
+      c: ["Borsadan BYF payı alıp fona iade eder, karşılığındaki kıymetleri satar", "Kıymetleri teslim edip yeni pay oluşturur ve payları borsada satar", "Kurucudan pay değerini düzeltmesini talep eder ve farkı tazminat olarak alır", "Fonun payları üzerinde açığa satış yaparak takasta fona iade eder", "Hiçbir işlem yapamaz; fark ancak endeks değiştiğinde kapanır"],
       d: 1,
       a: "İşlem fiyatı birim pay değerinden **yüksekse**, yatırımcı paylara karşılık gelen menkul kıymetleri teslim ederek **yeni pay oluşturur (creation)** ve bunları borsada satar. Birim pay değeri yüksekse bunun tersi (**redemption**) yapılır.",
       k: "1002 resmi not s. 224–225"

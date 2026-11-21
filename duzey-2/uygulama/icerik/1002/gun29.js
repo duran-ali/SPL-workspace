@@ -187,7 +187,7 @@ Yeni tebliğ: **III-52.3 Gayrimenkul Yatırım Fonlarına İlişkin Esaslar Tebl
     },
     {
       s: "Gayrimenkul yatırım fonunun **tüzel kişiliğine** ilişkin hangisi doğrudur?",
-      c: ["Ticaret siciline tescil edildiği anda tam tüzel kişilik kazanır", "Tüzel kişiliği yoktur; yalnız tapu ve bazı sicil işlemlerinde haiz sayılır", "Anonim ortaklık niteliğindedir ve kendi yönetim kurulu bulunur", "Tüzel kişiliği yoktur; gayrimenkuller tapuda kurucu adına kaydedilir", "Yalnızca vergi mevzuatı bakımından tüzel kişi kabul edilen bir yapıdır"],
+      c: ["Ticaret siciline tescil edildiği anda tam tüzel kişilik kazanır", "Tüzel kişiliği yoktur; yalnız tapu ve bazı sicil işlemlerinde haiz sayılır", "Anonim ortaklık niteliğindedir ve kendine ait yönetim kurulu bulunur", "Tüzel kişiliği yoktur; tüm gayrimenkuller tapuda kurucu adına kaydedilir", "Yalnızca vergi mevzuatı bakımından tüzel kişi kabul edilen bir yapıdır"],
       d: 1,
       a: "GYF tüzel kişiliği olmayan bir malvarlığıdır; ancak **tapu sicili** işlemleri ile ortağı olacağı anonim ortaklıkların kuruluş, sermaye artırımı ve pay devri gibi **ticaret sicili** işlemleriyle **sınırlı olarak** tüzel kişiliği haiz addolunur. Gayrimenkuller tapuya **fon adına** tescil edilir.",
       k: "1002 resmi not s. 238–239"
@@ -222,7 +222,7 @@ Yeni tebliğ: **III-52.3 Gayrimenkul Yatırım Fonlarına İlişkin Esaslar Tebl
     },
     {
       s: "GYF katılma paylarının **ayni** (gayrimenkul karşılığı) satışına ilişkin aşağıdakilerden hangisi **yanlıştır?**",
-      c: ["Her işlem öncesinde mevcut tüm pay sahiplerinin mutabakatı alınır", "Devredilecek gayrimenkul için değerleme raporu hazırlatılır", "Yatırımcıdan devralınacak gayrimenkulün rapor masrafı fondan ödenir", "İpotekli gayrimenkuller pay karşılığında fona devredilemez", "Satışta esas alınan değer rapordaki değerden fazla olamaz"],
+      c: ["Her işlem öncesinde mevcut tüm pay sahiplerinin mutabakatı alınır", "Devredilecek gayrimenkul için değerleme raporu hazırlatılır", "Yatırımcıdan alınacak gayrimenkulün rapor masrafı fondan ödenir", "İpotekli gayrimenkuller pay karşılığında fona devredilemez", "Satışta esas alınan değer, rapordaki değerden fazla olamaz"],
       d: 2,
       a: "Yatırımcılardan fona devredilecek gayrimenkuller için hazırlanan değerleme raporunun masrafları **fon portföyünden karşılanamaz**. Diğer ifadeler doğrudur: tüm pay sahiplerinin mutabakatı, değerleme raporu, ipotekli gayrimenkul yasağı ve rapor değerinden fazla olmama kuralı.",
       k: "1002 resmi not s. 246"

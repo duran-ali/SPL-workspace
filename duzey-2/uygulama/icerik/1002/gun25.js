@@ -191,7 +191,7 @@ Dokümanlarda Kurul onayının Kurulun veya kamunun **tekeffülü** gibi algıla
   sorular: [
     {
       s: "Aşağıdaki fonlardan hangisi III-52.1 Yatırım Fonlarına İlişkin Esaslar Tebliği'nin kapsamındadır?",
-      c: ["Borsa yatırım fonu", "Gayrimenkul yatırım fonu", "Girişim sermayesi yatırım fonu", "Değişken şemsiye fona bağlı bir fon", "Emeklilik yatırım fonu"],
+      c: ["Borsa yatırım fonu", "Gayrimenkul yatırım fonu", "Girişim sermayesi yatırım fonu", "Değişken şemsiye fona bağlı fon", "Bireysel emeklilik yatırım fonu"],
       d: 3,
       a: "**BYF, GYF ve GSYF** Tebliğin kapsamı dışındadır ve kendi tebliğlerine tabidir. Emeklilik yatırım fonları ise ayrı bir kanuna tabidir. **Değişken şemsiye fona bağlı** bir fon bu Tebliğin kapsamındadır.",
       k: "1002 resmi not s. 198"

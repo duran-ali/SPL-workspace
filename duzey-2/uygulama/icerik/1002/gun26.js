@@ -144,7 +144,7 @@ Borsa dışı **türev** ve **saklı türev** işlemleri, DSYO'larda gördüğü
     },
     {
       s: "Fon portföyünde **Hazine** tarafından ihraç edilen borçlanma araçlarına ilişkin hangisi doğrudur?",
-      c: ["Genel %10 tek ihraççı sınırı aynen uygulanır", "İhraççı sınırı yoktur; tek bir varlık için %35 sınırı vardır", "Fon toplam değerinin en fazla %20'si Hazine kâğıdı olabilir", "Hazine kâğıtları ancak Kurul izniyle portföye alınabilir", "Hazine kâğıtları %40 toplam sınırına dâhil edilir"],
+      c: ["Genel %10 tek ihraççı sınırı Hazine için de aynen uygulanır", "İhraççı sınırı yoktur; tek bir varlık için %35 sınırı vardır", "Fon toplam değerinin en fazla %20'si Hazine kâğıdı olabilir", "Hazine kâğıtları ancak Kurul izniyle portföye alınabilir", "Hazine kâğıtları %40 toplam sınırına dâhil edilir"],
       d: 1,
       a: "**TCMB, Hazine, ipotek finansmanı kuruluşları ve Türkiye Varlık Fonu** ihraçlarına ihraççı sınırları uygulanmaz; ancak **tek bir varlık** fon toplam değerinin en fazla **%35'i** olabilir.",
       k: "1002 resmi not s. 208"

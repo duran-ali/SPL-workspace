@@ -7,7 +7,7 @@ I have decided to create my SPL study module (Sermaye piyasaları lisansı, CFA 
 | Level | Status | Folder |
 |---|---|---|
 | Level 1 (Düzey 1) | Ready: 4 courses, daily lessons, mini tests, end-of-course tests, mock exams | [`duzey-1/`](duzey-1/) |
-| Level 2 (Düzey 2) | Planned | – |
+| Level 2 (Düzey 2) | In progress: course 1002 ready; 1003, 1005 and 1012 shared with Level 1; five courses still to come | [`duzey-2/`](duzey-2/) |
 | Level 3 (Düzey 3) | Planned | – |
 
 The study content and the app interface are in Turkish, the language of the exam.
@@ -18,12 +18,12 @@ The study content and the app interface are in Turkish, the language of the exam
 
 **Offline:**
 1. Download the repository (Code → Download ZIP) or clone it.
-2. Open `duzey-1/uygulama/index.html` in a browser. No internet connection is needed.
-3. Optional: for the official note links to work offline, download SPL's PDFs under the file names listed in [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md).
+2. Open `duzey-1/uygulama/index.html` (Level 1) or `duzey-2/uygulama/index.html` (Level 2) in a browser. No internet connection is needed.
+3. Optional: for the official note links to work offline, download SPL's PDFs under the file names listed in [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md) and [`duzey-2/kaynaklar/README.md`](duzey-2/kaynaklar/README.md).
 
 Progress is stored only in the browser you use, so the online and offline versions (and different devices) keep separate records. Use the backup and restore buttons on the app's Settings page (Ayarlar) to move your progress.
 
-Details: [`duzey-1/README.md`](duzey-1/README.md)
+Details: [`duzey-1/README.md`](duzey-1/README.md) · [`duzey-2/README.md`](duzey-2/README.md)
 
 ## License
 
