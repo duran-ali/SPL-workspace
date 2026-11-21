@@ -1,4 +1,4 @@
-// SPL Düzey 1 çalışma uygulaması.
+// SPL çalışma uygulaması (tüm düzeyler ortak kullanır; düzeye özgü ayarlar veri/program.js içindedir).
 // İçerik dosyaları SPL.gun(...) ve SPL.dersSonu(...) ile kendini kaydeder.
 // İlerleme tarayıcının localStorage alanında tutulur; Ayarlar'dan yedeklenebilir.
 (function () {
@@ -13,7 +13,7 @@
   };
 
   // ---------- Kayıt (ilerleme) ----------
-  var ANAHTAR = "spl-ilerleme-v1";
+  var ANAHTAR = P.anahtar || "spl-ilerleme-v1";
   function bosKayit() { return { gunler: {}, sonu: {}, denemeler: [], yanlislar: {}, onizleme: false }; }
   var K = bosKayit();
   function yukle() {
@@ -36,6 +36,11 @@
     var sira = karistir(q.c.map(function (_, i) { return i; }));
     return Object.assign({}, q, { c: sira.map(function (i) { return q.c[i]; }), d: sira.indexOf(q.d) });
   }
+  // Başka bir düzeyden ortak kullanılan derslerin dosyaları o düzeyin klasöründedir (d.kok).
+  function yol(d, p) { return (d && d.kok && p && !/^([a-z]+:|\/)/i.test(p)) ? d.kok + p : p; }
+  var SAYI = ["sıfır", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz", "on", "on bir", "on iki"];
+  function dersSayisi() { return SAYI[P.dersler.length] || String(P.dersler.length); }
+  function buyukHarf(t) { return t.charAt(0).toLocaleUpperCase("tr-TR") + t.slice(1); }
   function ders(kod) { return P.dersler.filter(function (d) { return d.kod === kod; })[0]; }
   function gunKaydi(kod, no) { return K.gunler[kod + "-" + no]; }
   function gunTamam(kod, no) { var g = gunKaydi(kod, no); return !!(g && g.tamam); }
@@ -44,7 +49,7 @@
   // Yerelde (dosyadan veya localhost'tan) indirilen PDF kullanılır. İnternetteki bir
   // adresten (ör. GitHub Pages) açılınca PDF'ler orada olmadığı için SPL'nin resmi adresi kullanılır.
   var YEREL = location.protocol === "file:" || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
-  function pdfAdresi(o) { return (!YEREL && o.pdfResmi) ? o.pdfResmi : o.pdf; }
+  function pdfAdresi(o, d) { return (!YEREL && o.pdfResmi) ? o.pdfResmi : yol(d || o, o.pdf); }
   function pdfLink(d, sayfa) {
     if (!d.pdf) return null;
     return pdfAdresi(d) + (d.pdfOfset != null ? "#page=" + (sayfa + d.pdfOfset) : "");
@@ -140,8 +145,8 @@
     h += "</div>";
     var dAcik = denemeAcikMi();
     h += "<h2 class=\"bolum-baslik\">Genel deneme</h2>";
-    h += "<div class=\"kart\"><p>Dört dersten 25'er soru, toplam 100 soru. Gerçek sınavdaki gibi her dersten en az 50, ortalamada en az 60 gerekir.</p>";
-    h += dAcik ? "<a class=\"dugme\" href=\"#/deneme\">Deneme başlat</a>" : "<p class=\"kucuk soluk\">Dört dersin ders sonu testlerini bitirince açılır.</p>";
+    h += "<div class=\"kart\"><p>" + buyukHarf(dersSayisi()) + " dersten " + P.dersSonuSoru + "'er soru, toplam " + (P.dersSonuSoru * P.dersler.length) + " soru. Gerçek sınavdaki gibi her dersten en az 50, ortalamada en az 60 gerekir.</p>";
+    h += dAcik ? "<a class=\"dugme\" href=\"#/deneme\">Deneme başlat</a>" : "<p class=\"kucuk soluk\">" + buyukHarf(dersSayisi()) + " dersin ders sonu testlerini bitirince açılır.</p>";
     var tamlar = K.denemeler.filter(function (x) { return x.tur !== "tek"; });
     if (tamlar.length) {
       h += "<p class=\"kucuk\">Son tam deneme: " + tamlar.slice(-1)[0].ort + " ortalama · " + (tamlar.slice(-1)[0].basarili ? "başarılı" : "başarısız") + "</p>";
@@ -157,7 +162,7 @@
     var d = ders(kod); if (!d) return anaSayfa();
     var i = ilerleme(d);
     var h = "<a class=\"geri\" href=\"#/\">← Ana sayfa</a><h1>" + kac(d.ad) + "</h1>";
-    h += "<p class=\"alt-yazi\">" + d.kod + " · 25 soru · resmi not: <a href=\"" + kac(pdfAdresi(d)) + "\" target=\"_blank\">PDF'i aç</a></p>";
+    h += "<p class=\"alt-yazi\">" + d.kod + " · " + P.dersSonuSoru + " soru · resmi not: <a href=\"" + kac(pdfAdresi(d)) + "\" target=\"_blank\">PDF'i aç</a></p>";
     if (!d.gunler.length) { goster(h + "<div class=\"kart\"><p>Bu dersin günlük planı henüz hazırlanmadı.</p></div>"); return; }
     h += cubuk(i.oran) + "<p class=\"kucuk\">" + i.biten + " / " + i.top + " gün tamamlandı</p>";
     h += "<ol class=\"gun-listesi\">";
@@ -225,7 +230,7 @@
     if (!liste.length) return "";
     var h = "<div class=\"kart\"><h3>Resmi çalışma soruları</h3><p class=\"kucuk soluk\">SPL'nin açık uçlu, hesaplamalı soruları. Önce kendin çöz, sonra PDF'teki cevapla karşılaştır.</p><ul>";
     liste.forEach(function (q) {
-      h += "<li><a target=\"_blank\" href=\"" + kac(pdfAdresi(cs) + "#page=" + q.sayfa) + "\">Soru " + kac(q.no) + ": " + kac(q.baslik) + "</a> <span class=\"kucuk soluk\">(s. " + q.sayfa + ")</span>" +
+      h += "<li><a target=\"_blank\" href=\"" + kac(pdfAdresi(cs, ders(kod)) + "#page=" + q.sayfa) + "\">Soru " + kac(q.no) + ": " + kac(q.baslik) + "</a> <span class=\"kucuk soluk\">(s. " + q.sayfa + ")</span>" +
         (q.not ? "<br><span class=\"kucuk uyari-yazi\">Not: " + kac(q.not) + "</span>" : "") + "</li>";
     });
     return h + "</ul></div>";
@@ -449,7 +454,7 @@
     if (!hazir.length) { goster(h + "<div class=\"kart\"><p>Henüz soru havuzu yok.</p></div>"); return; }
     var dk = P.denemeDakika;
     h += "<div class=\"kart\"><h3>Tam deneme</h3><p>" + hazir.length + " ders × " + P.dersSonuSoru + " soru · süre " + (dk * hazir.length) + " dakika (gerçek sınavda her ders " + dk + " dakikalık ayrı bir oturumdur).</p>";
-    h += "<p class=\"kucuk\">Her ders ayrı puanlanır. Başarı için her dersten en az " + P.basari.konuMin + ", dört dersin ortalamasında en az " + P.basari.ortalamaMin + " gerekir; ortalama en yakın tam sayıya yuvarlanır. Yanlış cevap doğruyu götürmez, boş bırakma.</p>";
+    h += "<p class=\"kucuk\">Her ders ayrı puanlanır. Başarı için her dersten en az " + P.basari.konuMin + ", " + dersSayisi() + " dersin ortalamasında en az " + P.basari.ortalamaMin + " gerekir; ortalama en yakın tam sayıya yuvarlanır. Yanlış cevap doğruyu götürmez, boş bırakma.</p>";
     if (hazir.length < P.dersler.length) h += "<p class=\"kucuk uyari-yazi\">Sorusu hazır olmayan dersler bu denemeye katılmaz.</p>";
     h += "<button class=\"dugme\" id=\"basla-tam\">Tam denemeyi başlat</button></div>";
     h += "<div class=\"kart\"><h3>Tek ders oturumu</h3><p class=\"kucuk\">Gerçek sınavdaki bir oturum gibi: " + P.dersSonuSoru + " soru, " + dk + " dakika. Düşük kalan dersi tekrar etmek için.</p><div class=\"dugmeler\">";
@@ -495,7 +500,7 @@
       K.denemeler.push({ tarih: Date.now(), tur: tur, sonuc: sonuc, ort: ort, basarili: basarili, ids: cozulen.map(function (q) { return q.id; }) });
       kaydet();
       var mesaj;
-      if (tur === "tek") mesaj = hepsiBaraj ? "Bu dersten " + P.basari.konuMin + " barajını geçtin. Genel başarı için dört dersin ortalaması en az " + P.basari.ortalamaMin + " olmalı." : "Bu ders için " + P.basari.konuMin + " barajı geçilemedi.";
+      if (tur === "tek") mesaj = hepsiBaraj ? "Bu dersten " + P.basari.konuMin + " barajını geçtin. Genel başarı için " + dersSayisi() + " dersin ortalaması en az " + P.basari.ortalamaMin + " olmalı." : "Bu ders için " + P.basari.konuMin + " barajı geçilemedi.";
       else if (!tam) mesaj = "Bu deneme tüm dersleri içermediği için başarı değerlendirmesi yapılmadı.";
       else mesaj = basarili ? "Gerçek sınav ölçütüne göre BAŞARILI." : "Ölçüt: her dersten en az " + P.basari.konuMin + " ve ortalama en az " + P.basari.ortalamaMin + ". Henüz sağlanmadı.";
       return "<span class=\"etiket\">" + kac(baslik) + " · süre " + gecen + "</span><h1>" + (tur === "tek" ? sonuc[dahil[0].kod] + " puan" : "Ortalama " + ort) + "</h1>" +
@@ -573,9 +578,9 @@
     yukle();
     var dosyalar = [];
     P.dersler.forEach(function (d) {
-      d.gunler.forEach(function (g) { if (g.hazir) dosyalar.push("icerik/" + d.kod + "/gun" + String(g.no).padStart(2, "0") + ".js"); });
-      if (d.dersSonu) dosyalar.push("icerik/" + d.kod + "/ders-sonu.js");
-      if (d.deneme) dosyalar.push("icerik/" + d.kod + "/deneme.js");
+      d.gunler.forEach(function (g) { if (g.hazir) dosyalar.push(yol(d, "icerik/" + d.kod + "/gun") + String(g.no).padStart(2, "0") + ".js"); });
+      if (d.dersSonu) dosyalar.push(yol(d, "icerik/" + d.kod + "/ders-sonu.js"));
+      if (d.deneme) dosyalar.push(yol(d, "icerik/" + d.kod + "/deneme.js"));
     });
     var kalan = dosyalar.length;
     function bitti() { if (--kalan <= 0) { window.addEventListener("hashchange", yonlendir); yonlendir(); } }

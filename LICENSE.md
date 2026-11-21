@@ -8,7 +8,7 @@ This project may be used freely for **personal, educational and other noncommerc
 
 | Scope | License |
 |---|---|
-| Software: `index.html` in the repository root, and `index.html`, `js/` and `stil.css` under `duzey-*/uygulama/` | [PolyForm Noncommercial License 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
+| Software: `index.html` in the repository root, `ortak/` (shared app code and styles), and `index.html` and `veri/` under `duzey-*/uygulama/` | [PolyForm Noncommercial License 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md) |
 | Content: lessons, questions and explanations (`duzey-*/uygulama/icerik/`, `duzey-*/uygulama/veri/`), Markdown and JSON documents | [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSES/CC-BY-NC-SA-4.0.txt) |
 
 Required Notice: Copyright (c) 2026 Duran Ali Atalay (https://github.com/duran-ali/SPL-workspace)
