@@ -7,6 +7,7 @@ Source page: https://spl.com.tr/sinav-calisma-notlari/ (version: update of 2026-
 | Save as | Download from |
 |---|---|
 | `calisma-notlari/1002_Genis_Kapsamli_SP_Mevzuati_ve_Meslek_Kurallari.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1002_MKT_30062026_202607141027.pdf |
+| `calisma-notlari/1004_Sermaye_Piyasasi_Araclari_2.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1004_MKT_30062026_202607141543.pdf |
 
 Courses shared with Level 1 (1003, 1005, 1012) use the PDFs in [`../../duzey-1/kaynaklar/`](../../duzey-1/kaynaklar/README.md). This list grows as new Level 2 courses are added.
 
