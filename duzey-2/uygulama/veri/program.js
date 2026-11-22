@@ -160,11 +160,11 @@
           { no: 34, bolum: "Takasbank Para Piyasası", baslik: "TPP: çalışma esasları, limitler, emirler ve eşleşme", sayfa: [216, 221], hazir: true },
           { no: 35, bolum: "Takasbank Para Piyasası", baslik: "TPP teminatları, garanti fonu ve temerrüt", sayfa: [221, 230], hazir: true },
           { no: 36, bolum: "TEFAS", baslik: "TEFAS: hukuki çerçeve, üyelik, çalışma esasları ve emirler", sayfa: [231, 236], hazir: true },
-          { no: 37, bolum: "TEFAS", baslik: "TEFAS: alım-satım süreci, temerrüt, komisyonlar ve olağanüstü durumlar", sayfa: [236, 243], hazir: false },
-          { no: 38, bolum: "BEFAS", baslik: "BEFAS: işleyiş, limitler, alım-satım süreci, temerrüt ve komisyonlar", sayfa: [244, 253], hazir: false }
+          { no: 37, bolum: "TEFAS", baslik: "TEFAS: alım-satım süreci, temerrüt, komisyonlar ve olağanüstü durumlar", sayfa: [236, 243], hazir: true },
+          { no: 38, bolum: "BEFAS", baslik: "BEFAS: işleyiş, limitler, alım-satım süreci, temerrüt ve komisyonlar", sayfa: [244, 253], hazir: true }
         ],
-        dersSonu: false,
-        deneme: false
+        dersSonu: true,
+        deneme: true
       },
       yakinda("1007", "Finansal Yönetim ve Mali Analiz", "Finansal Yönetim"),
       yakinda("1010", "Ticaret Hukuku", "Ticaret Hukuku"),
