@@ -16,11 +16,11 @@ The app works the same way as Level 1 (daily reading, mini tests, end-of-course 
 | 1002 | Geniş Kapsamlı Sermaye Piyasası Mevzuatı ve Meslek Kuralları (Capital Market Legislation and Professional Rules, broad scope) | **Ready:** 37 days, 296 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1004 | Sermaye Piyasası Araçları 2 (Capital Market Instruments 2) | **Ready:** 34 days, 272 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1006 | Finansal Piyasalar (Financial Markets) | **Ready:** 38 days, 304 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
+| 1007 | Finansal Yönetim ve Mali Analiz (Financial Management and Analysis) | **Ready:** 29 days, 232 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1010 | Ticaret Hukuku (Commercial Law) | **Ready:** 27 days, 216 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1003 | Sermaye Piyasası Araçları 1 (Capital Market Instruments 1) | Shared with Level 1 |
 | 1005 | Yatırım Kuruluşları (Investment Firms) | Shared with Level 1 |
 | 1012 | Takas, Saklama ve Operasyon İşlemleri (Clearing, Custody and Operations) | Shared with Level 1 |
-| 1007 | Finansal Yönetim ve Mali Analiz (Financial Management and Analysis) | Coming |
 | 1011 | Muhasebe ve Finansal Raporlama (Accounting and Financial Reporting) | Coming |
 
 Shared courses are not copied: the Level 2 app loads their plan and content from the `duzey-1/` folder, so any fix made there appears in both levels. The full mock exam opens once the end-of-course tests of all nine courses are done, so it becomes available after the remaining courses are added.
@@ -31,10 +31,12 @@ Shared courses are not copied: the Level 2 app loads their plan and content from
 
 **1006 at a glance:** financial markets and Borsa İstanbul: legal framework, organs, members, listing and benchmarks (days 1–4), Equity Market: instruments, markets, primary and secondary market, sessions, trading methods, market making, order types, short selling and settlement, history (5–14), Debt Securities Market and its repo, international bond, qualified investor, watch-list and committed transactions markets (15–19), Money Market and Swap Market (20), Derivatives Market VİOP (21–24), Precious Metals and Precious Stones Market (25–26), over-the-counter markets (27–28), the Central Bank and interbank markets (29–30), Takasbank Equity Lending Market (31–33), Takasbank Money Market (34–35), TEFAS fund trading platform (36–37), BEFAS pension fund trading platform (38).
 
+**1007 at a glance:** general principles of financial management: goals, agency problem and corporate governance (day 1), financial planning: cash budget, pro forma statements, percent-of-sales method, break-even analysis and operating, financial and total leverage (2–7), cost of capital and WACC (8–9), capital structure: traditional view, Modigliani–Miller, trade-off and pecking-order theories (10–12), working capital management: cash, receivables and inventory with the economic order quantity (13–16), capital budgeting: cash flows, payback, NPV, IRR, profitability index and ranking problems (17–20), mergers and acquisitions, synergy and share exchange ratio (21–22), financial analysis: ratios, Dupont, vertical, horizontal and cash flow analysis, window dressing (23–26), leasing, factoring and forfaiting (27–29).
+
 **1010 at a glance:** general provisions on commercial companies: common features, capital contributions and their enforcement (days 1–2), mergers, demergers and conversions and the related lawsuits (3–6), groups of companies (7), the joint-stock company: definition, core principles and sustainable finance (8–10), incorporation (11), the board of directors: structure, duties, meetings, defective resolutions, obligations and liability (12–16), the general assembly: powers, meetings, voting, quorums and challenging resolutions (17–19), audit (20–21), amendments to the articles, capital increase and reduction, securities (22–23), shares and shareholder rights (24–26), dissolution and liquidation (27).
 
 ## Question review (November 2026)
-The 371 questions of course 1002, the 347 questions of course 1004, the 379 questions of course 1006 and the 291 questions of course 1010 were checked the same way as Level 1:
+The 371 questions of course 1002, the 347 questions of course 1004, the 379 questions of course 1006, the 307 questions of course 1007 and the 291 questions of course 1010 were checked the same way as Level 1:
 - Where options are shuffled, the correct option is the longest one in about 30–35% of questions, and in no question is it clearly longer than the others (1.3× or more).
 - Where option order is fixed (numeric options), correct answers are spread across A–E.
 - End-of-course and mock exam questions were screened for similarity against the daily questions.
@@ -46,7 +48,7 @@ duzey-2/
 ├── uygulama/                 ← the study app
 │   ├── index.html
 │   ├── veri/program.js       ← daily plan; shared courses come from duzey-1
-│   └── icerik/1002/, 1004/, 1006/, 1010/ ← gunXX.js, ders-sonu.js, deneme.js
+│   └── icerik/1002/, 1004/, 1006/, 1007/, 1010/ ← gunXX.js, ders-sonu.js, deneme.js
 └── kaynaklar/                ← download list (README.md); PDFs are not in the repository
 ```
 

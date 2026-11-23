@@ -166,7 +166,47 @@
         dersSonu: true,
         deneme: true
       },
-      yakinda("1007", "Finansal Yönetim ve Mali Analiz", "Finansal Yönetim"),
+      {
+        kod: "1007",
+        ad: "Finansal Yönetim ve Mali Analiz",
+        kisa: "Finansal Yönetim",
+        pdf: "../kaynaklar/calisma-notlari/1007_Finansal_Yonetim_ve_Mali_Analiz.pdf",
+        pdfResmi: "https://spl.com.tr/wp-content/uploads/2026/07/1007_MKT_30062026_202617041415.pdf", // internetten açılınca
+        pdfOfset: 6, // PDF sayfası = basılı sayfa + 6
+        gunler: [
+          { no: 1,  bolum: "Finansal Yönetimin Genel Esasları", baslik: "Finansal yönetim, finansal amaç, sosyal sorumluluk, temsil sorunu ve kurumsal yönetim", sayfa: [1, 4], hazir: true },
+          { no: 2,  bolum: "Finansal Planlama", baslik: "Nakit bütçesi", sayfa: [8, 10], hazir: true },
+          { no: 3,  bolum: "Finansal Planlama", baslik: "Proforma gelir tablosu ve bilanço kalemleri", sayfa: [10, 14], hazir: true },
+          { no: 4,  bolum: "Finansal Planlama", baslik: "Satışların yüzdesi yöntemiyle proforma tablolar", sayfa: [15, 17], hazir: true },
+          { no: 5,  bolum: "Finansal Planlama", baslik: "Başabaş analizi", sayfa: [18, 20], hazir: true },
+          { no: 6,  bolum: "Finansal Planlama", baslik: "Faaliyet kaldıracı", sayfa: [20, 22], hazir: true },
+          { no: 7,  bolum: "Finansal Planlama", baslik: "Finansal kaldıraç, finansal başabaş ve toplam kaldıraç", sayfa: [22, 25], hazir: true },
+          { no: 8,  bolum: "Sermaye Maliyeti", baslik: "Sermaye maliyeti, AOSM ve borcun maliyeti", sayfa: [40, 42], hazir: true },
+          { no: 9,  bolum: "Sermaye Maliyeti", baslik: "Özsermaye maliyeti ve AOSM hesabı", sayfa: [42, 44], hazir: true },
+          { no: 10, bolum: "Sermaye Yapısı", baslik: "Faaliyet riski, finansal risk ve sermaye yapısı teorisi", sayfa: [48, 50], hazir: true },
+          { no: 11, bolum: "Sermaye Yapısı", baslik: "Mükemmel işleyen piyasalarda sermaye yapısı (Modigliani-Miller)", sayfa: [50, 53], hazir: true },
+          { no: 12, bolum: "Sermaye Yapısı", baslik: "Dengeleme teorisi, asimetrik bilgi ve finansman hiyerarşisi", sayfa: [53, 56], hazir: true },
+          { no: 13, bolum: "İşletme Sermayesi Yönetimi", baslik: "İşletme sermayesi ve kârlılık ilişkisi", sayfa: [60, 62], hazir: true },
+          { no: 14, bolum: "İşletme Sermayesi Yönetimi", baslik: "Kasanın yönetimi", sayfa: [63, 65], hazir: true },
+          { no: 15, bolum: "İşletme Sermayesi Yönetimi", baslik: "Alacak yönetimi", sayfa: [65, 68], hazir: true },
+          { no: 16, bolum: "İşletme Sermayesi Yönetimi", baslik: "Stok yönetimi", sayfa: [68, 70], hazir: true },
+          { no: 17, bolum: "Yatırım Projelerinin Değerlemesi", baslik: "Yatırım harcamalarının önemi, yatırım türleri ve kararları etkileyen unsurlar", sayfa: [80, 82], hazir: true },
+          { no: 18, bolum: "Yatırım Projelerinin Değerlemesi", baslik: "Ortalama kârlılık oranı, geri ödeme süresi ve iskonto edilmiş geri ödeme süresi", sayfa: [82, 85], hazir: true },
+          { no: 19, bolum: "Yatırım Projelerinin Değerlemesi", baslik: "Net bugünkü değer, iç verim oranı ve kârlılık endeksi", sayfa: [85, 88], hazir: true },
+          { no: 20, bolum: "Yatırım Projelerinin Değerlemesi", baslik: "Yöntemlerin uygulanması ve karşılaştırılması", sayfa: [88, 92], hazir: true },
+          { no: 21, bolum: "Birleşme ve Devir", baslik: "Birleşme ve devir kavramları ve türleri", sayfa: [102, 104], hazir: true },
+          { no: 22, bolum: "Birleşme ve Devir", baslik: "Birleşme ve satın alma süreci, pay değişim oranı, avantaj ve dezavantajlar", sayfa: [105, 108], hazir: true },
+          { no: 23, bolum: "Finansal Analiz", baslik: "Finansal tablolar, oran analizi ve likidite oranları", sayfa: [112, 116], hazir: true },
+          { no: 24, bolum: "Finansal Analiz", baslik: "Finansal yapı oranları, faiz karşılama ve devir hızları", sayfa: [116, 120], hazir: true },
+          { no: 25, bolum: "Finansal Analiz", baslik: "Kârlılık, büyüme ve piyasa değeri oranları", sayfa: [120, 125], hazir: true },
+          { no: 26, bolum: "Finansal Analiz", baslik: "Dikey, yatay ve nakit akım analizi, finansal tablo makyajları", sayfa: [125, 128], hazir: true },
+          { no: 27, bolum: "Leasing, Faktoring ve Forfaiting", baslik: "Leasing: tanım, süreç, taraflar, finansal ve faaliyet kiralaması", sayfa: [137, 141], hazir: true },
+          { no: 28, bolum: "Leasing, Faktoring ve Forfaiting", baslik: "Diğer leasing türleri ve leasingin yararları", sayfa: [142, 145], hazir: true },
+          { no: 29, bolum: "Leasing, Faktoring ve Forfaiting", baslik: "Faktoring ve forfaiting", sayfa: [145, 147], hazir: true }
+        ],
+        dersSonu: true,
+        deneme: true
+      },
       {
         kod: "1010",
         ad: "Ticaret Hukuku",
