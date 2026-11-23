@@ -7,7 +7,7 @@ I have decided to create my SPL study module (Sermaye piyasaları lisansı, CFA 
 | Level | Status | Folder |
 |---|---|---|
 | Level 1 (Düzey 1) | Ready: 4 courses, daily lessons, mini tests, end-of-course tests, mock exams | [`duzey-1/`](duzey-1/) |
-| Level 2 (Düzey 2) | In progress: courses 1002, 1004, 1006, 1007 and 1010 ready; 1003, 1005 and 1012 shared with Level 1; one course still to come | [`duzey-2/`](duzey-2/) |
+| Level 2 (Düzey 2) | In progress: courses 1002, 1004, 1006, 1007, 1010 and 1016 ready; 1003, 1005 and 1012 shared with Level 1 | [`duzey-2/`](duzey-2/) |
 | Level 3 (Düzey 3) | Planned | – |
 
 The study content and the app interface are in Turkish, the language of the exam.

@@ -18,12 +18,12 @@ The app works the same way as Level 1 (daily reading, mini tests, end-of-course 
 | 1006 | Finansal Piyasalar (Financial Markets) | **Ready:** 38 days, 304 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1007 | Finansal Yönetim ve Mali Analiz (Financial Management and Analysis) | **Ready:** 29 days, 232 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1010 | Ticaret Hukuku (Commercial Law) | **Ready:** 27 days, 216 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
+| 1016 | Muhasebe ve Finansal Raporlama (Accounting and Financial Reporting) | **Ready:** 42 days, 336 mini-test questions, 25-question end-of-course test, 50 mock exam questions |
 | 1003 | Sermaye Piyasası Araçları 1 (Capital Market Instruments 1) | Shared with Level 1 |
 | 1005 | Yatırım Kuruluşları (Investment Firms) | Shared with Level 1 |
 | 1012 | Takas, Saklama ve Operasyon İşlemleri (Clearing, Custody and Operations) | Shared with Level 1 |
-| 1011 | Muhasebe ve Finansal Raporlama (Accounting and Financial Reporting) | Coming |
 
-Shared courses are not copied: the Level 2 app loads their plan and content from the `duzey-1/` folder, so any fix made there appears in both levels. The full mock exam opens once the end-of-course tests of all nine courses are done, so it becomes available after the remaining courses are added.
+Shared courses are not copied: the Level 2 app loads their plan and content from the `duzey-1/` folder, so any fix made there appears in both levels. The full mock exam opens once the end-of-course tests of all nine courses are done.
 
 **1002 at a glance:** Capital Markets Law 6362 (days 1–8), material events (9), corporate governance (10–13), real estate investment trusts (14–16), securities investment companies, fixed and variable capital (17–20), portfolio management companies (21–24), investment funds (25–27), exchange-traded funds (28), real estate investment funds (29–30), venture capital investment funds (31–32), venture capital investment trusts (33–34), TSPB professional rules, ethics and disciplinary regulation (35–37).
 
@@ -35,8 +35,10 @@ Shared courses are not copied: the Level 2 app loads their plan and content from
 
 **1010 at a glance:** general provisions on commercial companies: common features, capital contributions and their enforcement (days 1–2), mergers, demergers and conversions and the related lawsuits (3–6), groups of companies (7), the joint-stock company: definition, core principles and sustainable finance (8–10), incorporation (11), the board of directors: structure, duties, meetings, defective resolutions, obligations and liability (12–16), the general assembly: powers, meetings, voting, quorums and challenging resolutions (17–19), audit (20–21), amendments to the articles, capital increase and reduction, securities (22–23), shares and shareholder rights (24–26), dissolution and liquidation (27).
 
+**1016 at a glance:** general accounting: basic concepts, the uniform chart of accounts, balance sheet account classes 1–5, income statement class 6 and period-end entries (days 1–21), financial reporting: TTK and KGK framework, TFRS, BOBİ FRS and KÜMİ FRS, the conceptual framework, summaries of TMS/TFRS standards and the capital markets communiqué II-14.1 (22–30), independent audit: concepts, audit approaches and risk, audit under the TTK and Decree-Law 660, the Independent Audit Regulation, communiqué Seri:X No:22 for capital markets and the decision on companies subject to audit, audit procedures (31–42).
+
 ## Question review (November 2026)
-The 371 questions of course 1002, the 347 questions of course 1004, the 379 questions of course 1006, the 307 questions of course 1007 and the 291 questions of course 1010 were checked the same way as Level 1:
+The 371 questions of course 1002, the 347 questions of course 1004, the 379 questions of course 1006, the 307 questions of course 1007, the 291 questions of course 1010 and the 411 questions of course 1016 were checked the same way as Level 1:
 - Where options are shuffled, the correct option is the longest one in about 30–35% of questions, and in no question is it clearly longer than the others (1.3× or more).
 - Where option order is fixed (numeric options), correct answers are spread across A–E.
 - End-of-course and mock exam questions were screened for similarity against the daily questions.
@@ -48,7 +50,7 @@ duzey-2/
 ├── uygulama/                 ← the study app
 │   ├── index.html
 │   ├── veri/program.js       ← daily plan; shared courses come from duzey-1
-│   └── icerik/1002/, 1004/, 1006/, 1007/, 1010/ ← gunXX.js, ders-sonu.js, deneme.js
+│   └── icerik/1002/, 1004/, 1006/, 1007/, 1010/, 1016/ ← gunXX.js, ders-sonu.js, deneme.js
 └── kaynaklar/                ← download list (README.md); PDFs are not in the repository
 ```
 

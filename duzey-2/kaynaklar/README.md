@@ -11,8 +11,9 @@ Source page: https://spl.com.tr/sinav-calisma-notlari/ (version: update of 2026-
 | `calisma-notlari/1006_Finansal_Piyasalar.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1006_MKT_30062026_202607081123.pdf |
 | `calisma-notlari/1007_Finansal_Yonetim_ve_Mali_Analiz.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1007_MKT_30062026_202617041415.pdf |
 | `calisma-notlari/1010_Ticaret_Hukuku.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1010_MKT_30062026_202607270945.pdf |
+| `calisma-notlari/1016_Muhasebe_ve_Finansal_Raporlama.pdf` | https://spl.com.tr/wp-content/uploads/2026/07/1016_MKT_30062026_202607130952.pdf |
 
-Courses shared with Level 1 (1003, 1005, 1012) use the PDFs in [`../../duzey-1/kaynaklar/`](../../duzey-1/kaynaklar/README.md). This list grows as new Level 2 courses are added.
+Courses shared with Level 1 (1003, 1005, 1012) use the PDFs in [`../../duzey-1/kaynaklar/`](../../duzey-1/kaynaklar/README.md).
 
 The addresses may change when SPL updates the notes; in that case find the current file on the source page. Page numbers may shift in a different version.
 
