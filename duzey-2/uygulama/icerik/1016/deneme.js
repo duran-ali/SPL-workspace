@@ -144,7 +144,7 @@ SPL.deneme("1016", {
     },
     {
       s: "Mizan ile ilgili **GDT = BT = AT** eşitliğinde \"GDT\" neyi ifade eder?",
-      c: ["Genel denetim tutarını", "Gider dağıtım tablosunu", "Gelir-gider toplamını", "Genel dönem tablosunu", "Günlük defter tutarları toplamını"],
+      c: ["Genel denetim bulgularının tutarını", "Gider dağıtım tablosunun toplamını", "Gelir-gider toplamını", "Genel dönem sonu tablosunun toplamını", "Günlük defter tutarları toplamını"],
       d: 4,
       a: "GDT günlük defter borç ve alacak tutarları toplamı; BT mizan borç toplamı; AT mizan alacak toplamıdır. Bu eşitlik çift taraflı kaydın sonucudur.",
       k: "1016 resmi not s. 177"
@@ -228,7 +228,7 @@ SPL.deneme("1016", {
     },
     {
       s: "Stok maliyetleri **perakende yöntemiyle** nasıl bulunur?",
-      c: ["Fiili maliyetlerin toplanmasıyla", "Son alış fiyatıyla", "Normal kapasite maliyetleriyle", "Stokların satış değerinden uygun brüt kâr marjının düşülmesiyle", "Piyasa değerinin yarısı alınarak"],
+      c: ["Dönem içindeki fiili alış maliyetlerinin toplanmasıyla", "Dönemin son alış fiyatının stok miktarıyla çarpılmasıyla", "Normal kapasitede oluşan standart üretim maliyetleriyle", "Satış değerinden uygun brüt kâr marjı düşülerek", "Stokların piyasa değerinin yarısı esas alınarak"],
       d: 3,
       a: "Perakende yönteminde maliyet, stokların **satış değerinden uygun brüt kâr marjının düşülmesiyle** bulunur; sonuçlar fiili maliyete yakınsa kullanılabilir.",
       k: "1016 resmi not s. 207"
@@ -312,7 +312,7 @@ SPL.deneme("1016", {
     },
     {
       s: "Denetim firmalarının bazılarının **yüksek ticari risk** taşıdığı için denetimini üstlenmekten kaçındığı şirket türlerine notlarda hangi örnekler verilmiştir?",
-      c: ["Gıda ve tekstil şirketleri", "Yazılım teknoloji şirketleri ile sağlık ve kaza sigortası şirketleri", "Kamu iktisadi teşebbüsleri", "Belediye şirketleri", "Lisanslı depo işletmeleri"],
+      c: ["Gıda üretimi ve tekstil sanayi şirketleri", "Yazılım teknoloji ile sağlık ve kaza sigortası şirketleri", "Kamu iktisadi teşebbüsleri ve bağlı ortaklıkları", "Belediyelere ait iştirak ve şirketler", "Lisanslı depo ve antrepo işletmeleri"],
       d: 1,
       a: "Notlarda yüksek risk barındıran şirketlere **yazılım teknoloji şirketleri** ile **sağlık ve kaza sigortası şirketleri** örnek gösterilmiştir.",
       k: "1016 resmi not s. 249"
@@ -340,7 +340,7 @@ SPL.deneme("1016", {
     },
     {
       s: "Bağımsız Denetim Yönetmeliğine göre denetimin **unsurları** hangileridir?",
-      c: ["Plan, program, bütçe", "Denetimin konusu, tarafları, kıstası, kanıtları ve denetim raporu", "Yönetim, çalışan, ortak", "Bilanço, gelir tablosu, dipnot", "Sözleşme, ücret, süre"],
+      c: ["Denetim planı, denetim programı ve bütçe", "Konu, taraflar, kıstas, kanıtlar ve denetim raporu", "Yönetim kurulu, çalışanlar ve şirket ortakları", "Bilanço, gelir tablosu ve dipnotların tamamı", "Denetim sözleşmesi, denetim ücreti ve süresi"],
       d: 1,
       a: "Denetimin unsurlarını **konu**, **taraflar**, **kıstas**, **kanıtlar** ve **denetim raporu** oluşturur.",
       k: "1016 resmi not s. 264"

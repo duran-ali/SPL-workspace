@@ -1,6 +1,6 @@
 # SPL Level 2 study module (Düzey 2)
 
-Study app for the Capital Market Activities **Level 2** licensing exam (Sermaye Piyasası Faaliyetleri Düzey 2) run by SPL in Turkey. The study content and the app interface are in Turkish, like the exam. Level 2 is being built **one course at a time**.
+Study app for the Capital Market Activities **Level 2** licensing exam (Sermaye Piyasası Faaliyetleri Düzey 2) run by SPL in Turkey. The study content and the app interface are in Turkish, like the exam. All Level 2 courses are ready.
 
 ## Study app
 **Open `uygulama/index.html` in a browser** (double-click works). No internet connection or installation is needed. It also runs online: https://duran-ali.github.io/SPL-workspace/
