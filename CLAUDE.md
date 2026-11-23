@@ -25,8 +25,10 @@ Read [README.md](README.md) first: it describes the app, the file formats and th
 - Plan days in the level's `uygulama/veri/program.js` (`sayfa` = printed pages, `hazir: false` until written). Find `pdfOfset` (PDF page = printed page + offset) and record it.
 - A day: a Markdown lesson (`okuma`), starting with "## Bugünün haritası", plus **8 questions**. End-of-course: 25. Mock pool: 50, testing facts that the daily questions do not ask.
 - Each question: `{ s, c: [5 options], d: index 0–4, a: explanation, k: "<code> resmi not s. N" }`.
+- An option that starts with "Yalnız " or "Hiçbiri" stops the app from shuffling that question (see `sabitMi` in `araclar/yukle.js`). Use it only for real statement lists ("Yalnız I", "I ve II"); otherwise write "Yalnızca".
 - Only test what the official note says. Do not test facts on which official sources conflict; put them in a `> [!dikkat]` box and in the level README's conflict list.
-- Courses shared between levels live in one place only (`duzey-1/`); Level 2 loads them from there.
+- Courses shared between levels live in one place only, in the lowest level that has them (`duzey-1/` or `duzey-2/`); higher levels load them from there.
+- New course entries in `program.js` need `dersSonu: true` and `deneme: true` once `ders-sonu.js` and `deneme.js` exist; otherwise the app does not load them.
 
 ## Checks before reporting a course
 ```sh

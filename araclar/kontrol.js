@@ -40,7 +40,16 @@ for (const d of secilenler(argv)) {
     if (new Set(q.c.map(c => String(c).trim())).size !== 5) hatalar.push(id + ": tekrarlı şık / duplicate option");
     if (!new RegExp("^" + d.kod + " ").test(q.k)) uyari.push(id + ": kaynak '" + q.k + "' ders koduyla başlamıyor");
     dag[q.d]++;
-    if (sabitMi(q)) { sabitDag[q.d]++; continue; }
+    // Roma rakamlı ve sayısal şıklarda sıra anlamlıdır; uzunluk denetlenmez.
+    // "Yalnız ..." veya "Hiçbiri" yüzünden sabit kalan sorular karıştırılmadığı için uzunluk yine denetlenir.
+    // Roman-numeral and numeric option sets keep a meaningful order, so length is not checked there;
+    // sets that stay fixed only because of "Yalnız ..."/"Hiçbiri" are still checked.
+    if (sabitMi(q)) {
+      sabitDag[q.d]++;
+      const anlamliSira = q.sabit || q.c.some(c => /^(I,|I ve|II|III)/.test(String(c).trim())) ||
+        q.c.every(c => /^[\d%]/.test(String(c).trim()));
+      if (anlamliSira) continue;
+    }
     karisik++;
     const L = q.c.map(c => String(c).length);
     const mx = Math.max(...L);

@@ -29,9 +29,9 @@ A free study app for the licensing exams that SPL (Sermaye Piyasası Lisanslama 
 |---|---|---|---|
 | Level 1 (Düzey 1) | **Ready** | 1001, 1003, 1005, 1012 | [`duzey-1/`](duzey-1/) |
 | Level 2 (Düzey 2) | **Ready** | 1002, 1004, 1006, 1007, 1010, 1016 + 1003, 1005, 1012 shared with Level 1 | [`duzey-2/`](duzey-2/) |
-| Level 3 (Düzey 3) | Planned | – | – |
+| Level 3 (Düzey 3) | **In progress** | 1008 ready; 1009 and the taxation course coming; nine courses shared with Level 2 | [`duzey-3/`](duzey-3/) |
 
-Level 1 has about 860 questions; Level 2 adds about 2,100 in its own six courses. Course lists, topic summaries and question counts are in each level's README: [`duzey-1/README.md`](duzey-1/README.md) · [`duzey-2/README.md`](duzey-2/README.md)
+Level 1 has about 860 questions; Level 2 adds about 2,100 in its own six courses and Level 3 about 280 so far. Course lists, topic summaries and question counts are in each level's README: [`duzey-1/README.md`](duzey-1/README.md) · [`duzey-2/README.md`](duzey-2/README.md) · [`duzey-3/README.md`](duzey-3/README.md)
 
 ## Using the app
 
@@ -39,8 +39,8 @@ Level 1 has about 860 questions; Level 2 adds about 2,100 in its own six courses
 
 **Offline:**
 1. Download the repository (Code → Download ZIP) or clone it.
-2. Open `duzey-1/uygulama/index.html` (Level 1) or `duzey-2/uygulama/index.html` (Level 2) in a browser.
-3. Optional: for the official note links to work offline, download SPL's PDFs under the file names listed in [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md) and [`duzey-2/kaynaklar/README.md`](duzey-2/kaynaklar/README.md).
+2. Open `duzey-1/uygulama/index.html` (Level 1), `duzey-2/uygulama/index.html` (Level 2) or `duzey-3/uygulama/index.html` (Level 3) in a browser.
+3. Optional: for the official note links to work offline, download SPL's PDFs under the file names listed in [`duzey-1/kaynaklar/README.md`](duzey-1/kaynaklar/README.md), [`duzey-2/kaynaklar/README.md`](duzey-2/kaynaklar/README.md) and [`duzey-3/kaynaklar/README.md`](duzey-3/kaynaklar/README.md).
 
 **What the app offers:**
 
@@ -76,6 +76,7 @@ SPL-workspace/
 │   │   └── icerik/<code>/     ← gun01.js … gunNN.js, ders-sonu.js, deneme.js
 │   └── kaynaklar/             ← PDF download list (PDFs are not in the repo)
 ├── duzey-2/                   ← Level 2, same layout; shared courses load from duzey-1/
+├── duzey-3/                   ← Level 3, same layout; shared courses load from duzey-2/ and duzey-1/
 ├── araclar/                   ← command-line check tools (Node.js, Python); see araclar/README.md
 ├── CLAUDE.md                  ← working rules for AI agents
 ├── LICENSE.md, LICENSES/
@@ -84,7 +85,7 @@ SPL-workspace/
 
 - **No build step.** Plain HTML, CSS and JavaScript (ES5 style, no libraries). What is in the repository is what the browser runs.
 - **Loading.** Each level's `index.html` loads `program.js` and `app.js`. `app.js` then adds a `<script>` tag for every content file whose day is marked `hazir: true`. Content files register themselves with `SPL.gun(...)`, `SPL.dersSonu(...)` and `SPL.deneme(...)`. Script tags (instead of `fetch`) keep the app working when opened straight from disk (`file://`).
-- **Shared courses.** Courses 1003, 1005 and 1012 are on both levels. Level 2's `program.js` takes their plan from Level 1's `program.js` and loads their files from `duzey-1/`, so a fix there appears in both levels.
+- **Shared courses.** Courses 1003, 1005 and 1012 are on all three levels, and the six Level 2 courses are also on Level 3. Each level's `program.js` takes a shared course's plan from the level that owns it (Level 2 from Level 1; Level 3 from Level 2, which already includes the Level 1 courses) and loads its files from that level's folder, so a fix appears everywhere.
 - **Official note links.** Opened from disk or localhost, a link goes to the local PDF (`pdf`); online it goes to SPL's website (`pdfResmi`). `pdfOfset` converts printed page numbers to PDF page numbers.
 - **Hosting.** GitHub Pages publishes the `main` branch as it is. A push to `main` updates the site within a few minutes.
 

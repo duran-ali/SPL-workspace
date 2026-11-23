@@ -319,7 +319,7 @@ SPL.deneme("1016", {
     },
     {
       s: "Yüksek **sorumluluk baskısı** altındaki denetçilerin önemlilik yargıları ile ilgili hangisi doğrudur (Dezoort vd., 2006)?",
-      c: ["Daha az tutucu ve daha değişken davranırlar", "Daha tutucu ve daha az değişken davranır, daha çok zaman ayırırlar", "Önemlilik belirlemezler", "Yalnız nicel ölçütler kullanırlar", "Yargılarını açıklamazlar"],
+      c: ["Daha az tutucu ve daha değişken davranırlar", "Daha tutucu davranır ve daha çok zaman ayırırlar", "Önemlilik düzeyi belirlemekten kaçınırlar", "Yalnızca nicel ölçütler kullanmayı tercih ederler", "Yargılarını raporda hiçbir zaman açıklamazlar"],
       d: 1,
       a: "Yüksek sorumluluk baskısı altındaki denetçiler önemlilik yargılarında **daha tutucu**, kararlarında **daha az değişken** davranır, görevlerine daha çok zaman ayırır ve daha uzun açıklama yapma gereği hisseder.",
       k: "1016 resmi not s. 250"
